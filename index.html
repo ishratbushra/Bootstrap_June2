@@ -1,0 +1,334 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Bootsrtap">
+  <meta name="keywords" content="Bootstrap,Introduction of bootstrap,Media query">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+  <title>Bootstrap</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dummy.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="cat.html">Page1</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="navtab.html">Click here to see Nav Tab</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="images/daisy.jpg" class="d-block w-100" alt="daisy">
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="images/b2.jpg" class="d-block w-100" alt="b2">
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="images/b3.jpg" class="d-block w-100" alt="b3">
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="images/b1.jpg" class="d-block w-100" alt="b1">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="button"><button type="button" class="btn-close" aria-label="Close"> close button</button></div>
+
+  <br>
+  <p>
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      collapse1
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+      aria-expanded="false" aria-controls="collapseExample">
+      collapse2
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus possimus ab ullam ipsa pariatur impedit
+      nostrum quisquam saepe eum nulla facere, enim tempore aspernatur accusantium eaque tenetur hic rem?
+    </div>
+  </div>
+  <br>
+  <label>Chores to do:</label>
+  <div class="list-group">
+    <label class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="Laundry">
+      Laundry
+    </label>
+    <label class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="Cooking">
+      Cooking
+    </label>
+    <label class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="Homework">
+      Homework
+    </label>
+    <label class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value=" Shopping">
+      Shopping
+    </label>
+    <label class="list-group-item">
+      <input class="form-check-input me-1" type="checkbox" value="Cleaning">
+      Cleaning
+    </label>
+  </div>
+  <br>
+  <h1>Modal Form</h1>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Click Modal Button!!
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!--form-->
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Last Name" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput3" class="form-label">Email</label>
+              <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email" required>
+              <div class="invalid-feedback">
+                wrong format
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Upload Picture</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password" required>
+              <div class="invalid-feedback">
+                must fillup.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput5" class="form-label">Country</label>
+              <select class="form-select" aria-label="Default select example">
+                <option value="BD">Bangladesh</option>
+                <option value="CN">Canada</option>
+                <option value="TH">Thailand</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput6" class="form-label">Gender</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="f">
+                <label class="form-check-label" for="exampleRadios1">
+                  Female
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="m">
+                <label class="form-check-label" for="exampleRadios2">
+                  Male
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  <a href="cat.html"> Terms and Conditions</a>
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--offcanvas start-->
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+    aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>offcanvas.</p>
+    </div>
+  </div>
+  <!--offcanvas end-->
+  <!--placeholder start-->
+  <div class="card">
+    <img src="images/daisy.jpg" class="card-img-top" alt="daisy">
+
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+      <a href="cat.html" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card" aria-hidden="true">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title placeholder-glow">
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a href="cat.html" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+    </div>
+  </div>
+  <!--placeholder end-->
+
+  <!--pagination start-->
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="cat.html">Cat</a></li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link" href="home.html">Home</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="favorites.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <!--pagination start-->
+  <!--popover start-->
+  <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover 1"
+    data-bs-content="testing">
+    Click to toggle popover</button>
+  <!--popover end-->
+  <!--progress start-->
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+      aria-valuemax="100">25%</div>
+  </div>
+
+  <!--progress end-->
+  <!--scrollspy start-->
+  <nav id="navbar-example2" class="navbar bg-light px-3">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">First</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    <h4 id="scrollspyHeading1">1</h4>
+    <p>a</p>
+    <h4 id="scrollspyHeading2">2</h4>
+    <p>b</p>
+
+  </div>
+  <!--scrollspy end-->
+  <!--tooltip start-->
+  <button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="bottom"
+    data-bs-custom-class="custom-tooltip" title="my custom tooltip">
+    Custom tooltip
+  </button>
+  <!--tooltip end-->
+  <!--Java script -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
